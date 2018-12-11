@@ -61,6 +61,13 @@
 
 #define CONFIG_BAUDRATE		115200
 
+ #if 1
+ #define CONFIG_OF_LIBFDT 1
+ #define CONFIG_CMD_FDT
+ #define CONFIG_IMAGE_FORMAT_LEGACY
+#endif
+
+
 #define CONFIG_CMD_MTDPARTS
 #define CONFIG_MTD_DEVICE
 #define MTDIDS_DEFAULT "nand0=jz2440-0"/*哪个分区*/
